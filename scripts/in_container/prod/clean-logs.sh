@@ -19,8 +19,8 @@
 
 set -euo pipefail
 
-DIRECTORY="${AIRFLOW_HOME:-/usr/local/airflow}"
-RETENTION="${AIRFLOW__LOG_RETENTION_DAYS:-15}"
+readonly DIRECTORY="${AIRFLOW_HOME:-/usr/local/airflow}"
+readonly RETENTION="${AIRFLOW__LOG_RETENTION_DAYS:-15}"
 
 trap "exit" INT TERM
 
